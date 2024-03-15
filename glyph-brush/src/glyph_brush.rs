@@ -591,6 +591,7 @@ pub enum BrushAction<V> {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+#[allow(missing_copy_implementations)]
 pub enum BrushError {
     /// Texture is too small to cache queued glyphs
     ///

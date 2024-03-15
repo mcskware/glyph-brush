@@ -33,7 +33,7 @@
 mod extra;
 mod glyph_brush;
 mod glyph_calculator;
-mod section;
+pub mod section;
 
 pub mod legacy;
 

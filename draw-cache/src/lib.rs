@@ -186,6 +186,7 @@ impl PaddingAware for Rectangle<u32> {
 /// let bigger_cache = DrawCache::builder().dimensions(1024, 1024).build();
 /// ```
 #[derive(Debug, Clone)]
+#[allow(missing_copy_implementations)]
 pub struct DrawCacheBuilder {
     dimensions: (u32, u32),
     scale_tolerance: f32,
@@ -487,6 +488,7 @@ fn normalised_offset_from_position(position: Point) -> Point {
 }
 
 /// Dynamic rasterization draw cache.
+#[allow(missing_debug_implementations)]
 pub struct DrawCache {
     scale_tolerance: f32,
     position_tolerance: f32,

@@ -14,6 +14,7 @@ use std::hash::BuildHasher;
 /// let mut glyph_brush: GlyphBrush<Vertex> = GlyphBrushBuilder::using_font(dejavu).build();
 /// ```
 #[non_exhaustive]
+#[allow(missing_debug_implementations)]
 pub struct GlyphBrushBuilder<F = FontArc, H = DefaultSectionHasher> {
     pub font_data: Vec<F>,
     pub cache_glyph_positioning: bool,
